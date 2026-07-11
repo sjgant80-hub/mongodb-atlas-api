@@ -1,0 +1,7 @@
+services:
+  mongodb-atlas-api:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      UPSTREAM: "https://cloud.mongodb.com"
+    restart: unless-stopped
